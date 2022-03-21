@@ -23,4 +23,4 @@ Esse projeto foi desenvolvido com:
 
 # :iphone: Layout
 
-<img src="./files/layout.jpg" alt="" width="30%">
+<img src="./files/layout.jpg" alt="" width="100%">
