@@ -93,19 +93,20 @@ footer a {
 /**/
 @media screen and (max-width: 768px) {
     .foto {
-        width: 150px;
+        width: 130px;
         margin-top: 30px;
     }
 
     .nome {
         padding: 10px 0;
         text-align: center;
-        font-size: 50px;
+        font-size: 40px;
         color: #000;
     }
 
     .link {
         width: 300px;
+        margin: 10px 0;
         font-size: 16px;
     }
 
