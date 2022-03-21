@@ -97,6 +97,13 @@ footer a {
         margin-top: 30px;
     }
 
+    .nome {
+        padding: 10px 0;
+        text-align: center;
+        font-size: 50px;
+        color: #000;
+    }
+
     .link {
         width: 300px;
         font-size: 16px;
