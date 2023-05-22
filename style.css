@@ -25,11 +25,13 @@
 
   --primary-font: "Open Sans", sans-serif;
   --secondary-font: "Tan Buster", sans-serif;
-
-  font-size: 62.5%;
 }
 
 /* DEFINIÇÃO DE PÁGINA **********************************************/
+html {
+  font-size: 62.5%;
+}
+
 body {
   background: var(--base-color);
   color: var(--primary-font-color);
@@ -41,14 +43,12 @@ body {
   justify-content: center;
 
   height: 100vh;
-  margin: 0 100px;
+  margin: 0 10rem;
 }
 
 /* DEFINIÇÃO DO HEADER **********************************************/
 .principal {
   text-align: center;
-
-  margin: 0 30px;
   width: 50%;
 }
 
@@ -56,29 +56,27 @@ body {
   color: var(--primary-font-color);
   font-family: var(--secondary-font);
   font-size: 3.5rem;
-  letter-spacing: 1rem;
+  letter-spacing: 1.5rem;
+  text-align: right;
   text-transform: uppercase;
 }
 
 .posicao1 {
-  text-align: left;
+  margin-top: 5rem;
 }
 
 .posicao2 {
-  text-align: center;
-}
-
-.posicao3 {
-  text-align: right;
+  color: var(--light-color);
+  text-shadow: 2px 2px 1px var(--secondary-font-color);
 }
 
 .foto {
   border: 8px dotted var(--contraste-color);
   border-radius: 100%;
 
-  margin: 30px 0;
-  padding: 10px;
-  width: 250px;
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 50%;
 }
 
 .texto {
@@ -89,32 +87,28 @@ body {
   color: var(--secondary-font-color);
   font-weight: 600;
   text-align: center;
-
-  margin: 30px 0;
-  width: 250px;
 }
 
 .media img {
-  margin-right: 18px;
-  margin-top: 10px;
-  width: 40px;
+  margin: 2rem;
+  width: 8%;
 }
 
 .media img:first-child {
-  margin-left: 18px;
+  margin-left: 2rem;
 }
 
 .media img:hover {
-  margin-right: 8px;
-  margin-top: -10px;
-  width: 50px;
+  margin-right: 2rem;
+  margin-top: -2rem;
+  margin-left: 2rem;
+  width: 8%;
 
   transform: scaleX(1.2) scaleY(1.2);
 }
 
 /* DEFINIÇÃO DO MAIN ************************************************/
 .container {
-  margin-left: 100px;
   width: 50%;
 }
 
@@ -135,9 +129,9 @@ body {
   text-align: center;
   text-transform: uppercase;
 
-  margin: 20px 0;
-  padding: 30px 100px;
-  width: 400px;
+  margin: 2rem 0;
+  padding: 3rem 10rem;
+  width: 75%;
 }
 
 .link:hover {
@@ -146,14 +140,17 @@ body {
 
 .item1 {
   background: var(--primary-font-color);
+  box-shadow: 2px 2px 1px var(--secondary-font-color);
 }
 
 .item2 {
   background: var(--contraste-color);
+  box-shadow: 2px 2px 1px var(--secondary-font-color);
 }
 
 .item3 {
   background: var(--primary-font-color);
+  box-shadow: 2px 2px 1px var(--secondary-font-color);
 }
 
 /* VERSÃO MOBILE ****************************************************/
@@ -163,71 +160,69 @@ body {
     flex-direction: column;
 
     height: 100%;
-    margin: 30px 0;
+    margin: 0;
+    padding: 0;
   }
 
-  .nome,
-  .posicao1,
-  .posicao2,
-  .posicao3 {
-    color: var(--primary-font-color);
+  .principal {
+    margin: 1rem 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nome {
+    font-size: 3rem;
     text-align: center;
   }
 
   .foto {
-    margin: 30px 0;
-    width: 250px;
+    margin: 2rem 0;
+    width: 50%;
   }
 
   .media img {
-    width: 40px;
+    margin: 0;
+    width: 10%;
   }
 
   .container {
-    margin: 30px auto;
-    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
     width: 100%;
   }
 
   .links {
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  .link {
-    margin: 20px 0;
-    width: 60%;
-  }
-
-  .item1,
-  .item2,
-  .item3 {
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  body {
-    margin: 0 auto;
-  }
-
-  .posicao1 {
-    margin-top: 50px;
-  }
-
-  .media img {
     margin: 0;
-    width: 40px;
-  }
-
-  .links {
-    margin: 0;
-    padding: 30px;
     width: 100%;
   }
 
   .link {
     font-size: 1.6rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .nome {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .foto {
+    margin: 2rem 0;
+    width: 60%;
+  }
+
+  .links {
+    margin-bottom: 2rem;
+  }
+
+  .link {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 2rem 0;
     width: 80%;
   }
 }
